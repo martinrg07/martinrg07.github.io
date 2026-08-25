@@ -1,0 +1,322 @@
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">-->
+
+<title>Ryan Martin : Software</title>
+
+<style type-"text/css">
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background-color:#CFB991;
+  /*background-color:#ffffff;*/
+  color:#000000;
+}
+
+/*div{background-color:#ffffff;}*/
+a:link{color:#555960;}
+a:visited{color:#555960;}
+a:link{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+
+/*body{margin-left: 10%; margin-right: 10%; font-size: 15px;}*/
+
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  /*padding: 10px;*/
+  /*width: 240px;*/
+  width: 20%;
+  background-color:#000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color:#CFB991;
+  font-size: 18px; 
+  
+  /* 
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+ */
+  
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #CFB991;
+  padding: 0.4em;
+  text-decoration:bold;
+  /*font-size:16px;*/
+  font-size: 16px; 
+}
+
+/* Active/current link */
+.sidebar a.active {
+  /*background-color: #000000;*/
+  /*color:#CFB991;*/
+  background-color: #CFB991;
+  color: #000000;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  color: #CFB991;
+  text-decoration: underline;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+
+  margin-left: 22%;
+  /*padding: 50px;*/
+  /*height: 100%;*/
+  /*font-size:15px;*/
+  /*font-size:1em; */
+  /*padding-top: 25px;*/
+  /*padding-right: 80px;*/
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  
+  background-color:#CFB991;
+  color:#000000;
+}
+
+
+/* 
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+ */
+
+
+/* Two image containers (use 25% for four, and 33% for three, etc) */
+.column1 {
+  float: left;
+  width: 25%;
+  
+  padding-top: 20px;
+  padding-right: 35px;
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  /*padding: 30px;*/
+}
+
+.column2 {
+  float: left;
+  width: 65%;
+  
+  /*padding-top: -5px;*/
+  /*padding-left: 10px;*/
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  /*padding: 30px;*/
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column1 { width:100%; padding-left: 10%; }
+  .column2 { width:100%; padding-left: 10%}
+}
+
+</style>
+</head>
+
+
+
+<!--
+NCSU color schemes:
+BLACK = #000000
+RED = #CC0000
+-->
+
+
+
+
+
+<body>
+
+
+<div class="sidebar">
+<center>
+<a href="http://www.purdue.edu/" target="_blank"><img src="Images/PU-H-Full-Rev-RGB.png" width="78%"></a>
+<br>
+<img src="Images/mypic.jpg" width="75%" alt="[Ryan Martin]">
+<dl>
+<dt><b>Ryan Martin</b></dt>
+<dt><i>Professor</i></dt>
+</dl>
+</center>
+<a href="index.html">Home</a>
+<a href="teaching.html">Teaching</a>
+<a href="working.html">Working Papers</a>
+<a href="published.html">Published Papers</a>
+<a href="imbook.html">Inferential Models Book</a> 
+<a href="talks.html">Presentations</a>
+<a class="active" href="software.html">Software</a> 
+<a href="RyanMartin-CV.pdf">CV</a> 
+<a href="https://researchers.one/users/Ryan-Martin/qjmGjw5r" target="_blank">Researchers.One &nbsp;<img src="Images/r1_small_crop.png" height="17px" valign="bottom"></a>
+</div>
+
+
+
+
+
+<div class="content">
+
+<h3>Software</h3>
+
+<ul type="circle">
+
+<li> <i>Stitched inferential models.</i>  
+<blockquote>
+Paper: <a href="https://arxiv.org/abs/2501.10585" target="_blank">An efficient Monte Carlo method for valid prior-free possibilistic statistical inference</a> <br>
+Note: This is specifically for the gamma example in the paper; more/better code to come <br>
+Downloadable file: <a href="Codes/immc_gamma.R"><tt>immc_gamma.R</tt></a> 
+</blockquote>
+</li>
+
+<li> <i>Generalized inferential models for censored data.</i>  
+<blockquote>
+Paper: "Generalized inferential models for censored data." <br>
+Downloadable file: <a href="Codes/gimcens.R"><tt>gimcens.R</tt></a> 
+</blockquote>
+</li>
+
+<li> <i>Empirical Bayes prediction in sparse linear regression</i>. <blockquote> Paper: "Empirical priors for prediction in sparse
+high-dimensional linear regression". <br> Downloadable file: <a href="Codes/ebpred.R"><tt>ebpred.R</tt></a>  <!--<br> There is
+now an R package available <a href="https://cran.r-project.org/web/packages/ebreg/index.html" target="_blank">here</a> (developed
+by Yiqi Tang).--> </blockquote> </li>
+
+<li> <i>Empirical Bayes inference on a monotone density</i>. <blockquote> Paper: "Empirical priors and posterior concentration
+rates for a monotone density". <br> Downloadable file: <a href="Codes/ebmono.R"><tt>ebmono.R</tt></a> </blockquote> </li>
+
+<li> <i>Empirical Bayes inference in high-dimensional piecewise constant models</i>. <blockquote> Paper: "Asymptotically optimal
+empirical Bayes inference in a piecewise constant sequence model". <br> Downloadable file: <a
+href="Codes/ebpiece.R"><tt>ebpiece.R</tt></a> </blockquote> </li>
+
+<li> <i>Solving Fredholm equations of the first kind</i>. <blockquote> Paper: "On an algorithm for solving Fredholm equations of
+the first kind". <br> Downloadable file: <a href="Codes/fredholm.R"><tt>fredholm.R</tt></a> </blockquote> </li>
+
+<li> <i>Post-selection performance of prediction intervals in regression</i>. <blockquote> Paper: "On prediction of future
+insurance claims when the model is uncertain". <br> Downloadable file: <a href="Codes/pred.R"><tt>pred.R</tt></a>
+</blockquote> </li>
+
+<li> <i>Recursive Bayesian nonparametric predictive distribution</i>. <blockquote> Paper: "Real-time Bayesian nonparametric
+prediction of solvency risk". <br> Downloadable files: <a href="Codes/dpmrec.R"><tt>dpmrec.R</tt></a>, <a
+href="Codes/dpmrec.Rd"><tt>dpmrec.Rd</tt></a> </blockquote> </li>
+
+<li> <i>Empirical Bayes variable selection and inference in a sparse linear regression model</i>. <blockquote> Paper: "Empirical
+Bayes posterior concentration in sparse high-dimensional linear models". <br> Downloadable file: <a
+href="Codes/ebreg.R"><tt>ebreg.R</tt></a> </blockquote> </li>
+
+<li> <i>Empirical Bayes estimation of a sparse normal mean vector</i>. <blockquote> Paper: "Asymptotically minimax empirical Bayes
+estimation of a sparse normal mean" <br> Downloadable file: <a href="Codes/ebsparse.R"><tt>ebsparse.R</tt></a>
+</blockquote> </li>
+
+<!-- <li> <i>Gibbs posterior scaling algorithm</i>. <blockquote> Paper: "Scaling the Gibbs posterior credible regions" <br>
+Downloadable file: &nbsp; <a href="Codes/gps_qr.R"><tt>gps_qr.R</tt></a> </blockquote> </li> -->
+
+<li> <i>Dirichlet process mixture of log-normal distributions</i>. <blockquote> Paper: "A flexible Bayesian nonparametric model
+for predicting future insurance claims" <br> Downloadable file: <a href="Codes/dpmslice.R"><tt>dpmslice.R</tt></a>
+</blockquote> </li>
+
+<li><i>Gamma distribution with small shape parameter</i>. <blockquote> Paper: "Simulating from gamma distribution with small shape
+parameter" <br> Downloadable file: <a href="Codes/rgamss.R"><tt>rgamss.R</tt></a> </blockquote> </li>
+
+<li><i>Inferential models&#8212;heritability coefficient in mixed effect models</i>. <blockquote> Paper: "Exact prior-free
+probabilistic inference on the heritability coefficient in a linear mixed model" . <br> Downloadable files: <a
+href="Codes/imvch.R"><tt>imvch.R</tt></a>, <a href="Codes/assay.Rd"><tt>assay.Rd</tt></a> </blockquote> </li>
+
+<li><i>Inferential models&#8212;prediction</i>. <blockquote> Paper: "Prior-free probabilistic inference of future observations"
+<br> Downloadable file: <a href="Codes/impred.R"><tt>impred.R</tt></a> </blockquote> </li>
+
+<li><i>Inferential models&#8212;Poisson distribution</i>. <blockquote> Paper: "Optimal inferential models for a Poisson mean" <br>
+Downloadable file: <a href="Codes/impois.R"><tt>impois.R</tt></a> </blockquote> </li>
+
+<li><i>Inferential models&#8212;the basics</i>. <blockquote> Paper: "Inferential models: A framework for prior-free posterior
+probabilistic inference" <br> Downloadable file: <a href="Codes/imbasics.R"><tt>imbasics.R</tt></a> </blockquote> </li>
+
+<li><i>Robust regression via a hybrid predictive recursion-EM algorithm</i> <blockquote> Paper: "Robust regression via predictive
+recursion maximum likelihood" <br> Downloadable file: <a href="Codes/prreg.R"><tt>prreg.R</tt></a> </blockquote> </li>
+
+<li><i>Predictive recursion</i> and <i>predictive recursion marginal likelihood</i>. <blockquote> Downloadable files: <a
+href="Codes/pr.R"><tt>pr.R</tt></a>, <a href="Codes/pr.c"><tt>pr.c</tt></a> <br> Contains R and R+C versions of predictive
+recursion (PR). <br> Instructions provided in the .R file.<br> PR marginal likelihood can be defined easily using output of PR.
+</blockquote> </li>
+
+<li><i>Stochastic approximation&#8211;simulated annealing</i> (SASA) <i>method for finite mixtures.</i> <blockquote> Paper: "An
+approximate Bayesian marginal likelihood approach for estimating finite mixtures". <br> Downloadable files: <a
+href="Codes/sasa.R"><tt>sasa.R</tt></a>, <a href="Codes/sasa.c"><tt>sasa.c</tt></a>, <a
+href="Codes/galaxy.txt"><tt>galaxy.txt</tt></a> <br> Instructions in the .R file. <br> Examples with galaxy data: in R, type:
+<blockquote> <tt>source("sasa.R")</tt> <br> <tt>gal.loc.mix <- galaxy.known()</tt> <br> <tt>gal.locscale.mix <-
+galaxy.lsmix()</tt> </blockquote> </blockquote> </li>
+
+</ul>
+
+<br><br>
+
+</div>
+ 
+</body>
+
+
+</html> 
+
+
+
+
+
+
+

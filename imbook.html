@@ -1,0 +1,419 @@
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+<title>Ryan Martin : IM Book</title>
+
+<style type-"text/css">
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background-color:#CFB991;
+  /*background-color:#ffffff;*/
+  color:#000000;
+}
+
+/*div{background-color:#ffffff;}*/
+a:link{color:#555960;}
+a:visited{color:#555960;}
+a:link{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+
+/*body{margin-left: 10%; margin-right: 10%; font-size: 15px;}*/
+
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  /*padding: 10px;*/
+  /*width: 240px;*/
+  width: 20%;
+  background-color:#000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color:#CFB991;
+  font-size: 18px; 
+  
+  /* 
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+ */
+  
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #CFB991;
+  padding: 0.4em;
+  text-decoration:bold;
+  /*font-size:16px;*/
+  font-size: 16px; 
+}
+
+/* Active/current link */
+.sidebar a.active {
+  /*background-color: #000000;*/
+  /*color:#CFB991;*/
+  background-color: #CFB991;
+  color: #000000;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  color: #CFB991;
+  text-decoration: underline;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+
+  margin-left: 22%;
+  /*padding: 50px;*/
+  /*height: 100%;*/
+  /*font-size:15px;*/
+  /*font-size:1em; */
+  /*padding-top: 25px;*/
+  /*padding-right: 80px;*/
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  
+  background-color:#CFB991;
+  color:#000000;
+}
+
+
+/* 
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+ */
+
+
+/* Two image containers (use 25% for four, and 33% for three, etc) */
+.column1 {
+  float: left;
+  width: 25%;
+  
+  padding-top: 20px;
+  padding-right: 35px;
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  /*padding: 30px;*/
+}
+
+.column2 {
+  float: left;
+  width: 65%;
+  
+  /*padding-top: -5px;*/
+  /*padding-left: 10px;*/
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  /*padding: 30px;*/
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column1 { width:100%; padding-left: 10%; }
+  .column2 { width:100%; padding-left: 10%}
+}
+
+</style>
+</head>
+
+
+
+<!--
+NCSU color schemes:
+BLACK = #000000
+RED = #CC0000
+-->
+
+
+
+
+
+<body>
+
+
+<div class="sidebar">
+<center>
+<a href="http://www.purdue.edu/" target="_blank"><img src="Images/PU-H-Full-Rev-RGB.png" width="78%"></a>
+<br>
+<img src="Images/mypic.jpg" width="75%" alt="[Ryan Martin]">
+<dl>
+<dt><b>Ryan Martin</b></dt>
+<dt><i>Professor</i></dt>
+</dl>
+</center>
+<a href="index.html">Home</a>
+<a href="teaching.html">Teaching</a>
+<a href="working.html">Working Papers</a>
+<a href="published.html">Published Papers</a>
+<a class="active" href="imbook.html">Inferential Models Book</a> 
+<a href="talks.html">Presentations</a>
+<a href="software.html">Software</a> 
+<a href="RyanMartin-CV.pdf">CV</a> 
+<a href="https://researchers.one/users/Ryan-Martin/qjmGjw5r" target="_blank">Researchers.One &nbsp;<img src="Images/r1_small_crop.png" height="17px" valign="bottom"></a>
+</div>
+
+
+
+
+
+<div class="content">
+
+<!--
+<div class="row">
+
+<div class="column1">
+<a href="http://www.crcpress.com/product/isbn/9781439886489" target="_blank"><img src="Images/imbook_cover.jpg"
+border="0" width="25%"></a> 
+</div>
+
+<div class="column2">
+
+<h3>Inferential Models Book</h3>
+
+<blockquote>
+<p> R. Martin and C. Liu (2015). <i>Inferential Models: Reasoning with Uncertainty</i>. Monographs in Statistics and Applied
+Probability Series, Chapman & Hall/CRC Press. <a href="http://www.crcpress.com/product/isbn/9781439886489"
+target="_blank">[publisher]</a> <a href="https://www.amazon.com/Inferential-Models-Uncertainty-Ryan-Martin/dp/0367737809/ref=sr_1_1?dchild=1&keywords=martin+liu+inferential+models&qid=1609282471&sr=8-1" target="_blank">[amazon]</a> <a href="https://books.google.com/books?id=OdSYCgAAQBAJ&dq=inferential+
+model+book&source=gbs_navlinks_s" target="_blank">[google]</a> </p>
+
+<p> Problems in data science involve data, models, prior information, and unknowns that are believed to be relevant to the phenomenon under investigation.  The data scientist's goal is to convert this input into a meaningful quantification of uncertainty about those unknowns.  An <i>inferential model</i>, or <i>IM</i>, is a mapping from these inputs to a quantification of uncertainty about the unknowns.  The book is mainly about how to construct this mapping so that the output is guaranteed to be <i>valid</i> in a certain sense.  Despite the efforts by Bayes, Fisher, and others to quantify uncertainty using ordinary probability, our notion of validity is incompatible with this.  Therefore, the IM's output must be an <i>imprecise probability</i> and, in particular, random sets play an important role in our developments.  
+
+</blockquote>
+</div>
+ 
+</div>
+-->
+
+
+
+<table border="0" width="100%" cellpadding="1">
+
+<tr valign="top">
+<td width="80%">
+
+<h3>Inferential Models book</h3>
+
+<blockquote>
+<p> R. Martin and C. Liu (2015). <i>Inferential Models: Reasoning with Uncertainty</i>. Monographs in Statistics and Applied
+Probability Series, Chapman & Hall/CRC Press. <a href="http://www.crcpress.com/product/isbn/9781439886489"
+target="_blank">[publisher]</a> <a href="https://www.amazon.com/Inferential-Models-Uncertainty-Ryan-Martin/dp/0367737809/ref=sr_1_1?dchild=1&keywords=martin+liu+inferential+models&qid=1609282471&sr=8-1" target="_blank">[amazon]</a> </p>
+
+<p> Problems in data science involve data, models, prior information, and unknowns that are believed to be relevant to the phenomenon under investigation.  The data scientist's goal is to convert this input into a meaningful quantification of uncertainty about those unknowns.  An <i>inferential model</i>, or <i>IM</i>, is a mapping from these inputs to a quantification of uncertainty about the unknowns.  The book is mainly about how to construct this mapping so that the output is guaranteed to be <i>valid</i> in a certain sense.  Despite the efforts by Bayes, Fisher, and others to quantify uncertainty using ordinary probability, our notion of validity is incompatible with this.  Therefore, the IM's output must be an <i>imprecise probability</i> and, in particular, random sets play an important role in our developments.  </p>
+</blockquote>
+
+</td>
+
+<td width="20%">
+
+<a href="http://www.crcpress.com/product/isbn/9781439886489" target="_blank"><img src="Images/imbook_cover.jpg"
+border="0" width="100%"></a> 
+
+</td>
+
+</table>
+
+
+<!--
+<a href="http://www.crcpress.com/product/isbn/9781439886489" target="_blank"><img src="Images/imbook_cover.jpg"
+border="0" width="20%"></a> 
+
+<h3>Inferential Models Book</h3>
+
+<blockquote>
+<p> R. Martin and C. Liu (2015). <i>Inferential Models: Reasoning with Uncertainty</i>. Monographs in Statistics and Applied
+Probability Series, Chapman & Hall/CRC Press. <a href="http://www.crcpress.com/product/isbn/9781439886489"
+target="_blank">[publisher]</a> <a href="https://www.amazon.com/Inferential-Models-Uncertainty-Ryan-Martin/dp/0367737809/ref=sr_1_1?dchild=1&keywords=martin+liu+inferential+models&qid=1609282471&sr=8-1" target="_blank">[amazon]</a> </p>
+
+<p> Problems in data science involve data, models, prior information, and unknowns that are believed to be relevant to the phenomenon under investigation.  The data scientist's goal is to convert this input into a meaningful quantification of uncertainty about those unknowns.  An <i>inferential model</i>, or <i>IM</i>, is a mapping from these inputs to a quantification of uncertainty about the unknowns.  The book is mainly about how to construct this mapping so that the output is guaranteed to be <i>valid</i> in a certain sense.  Despite the efforts by Bayes, Fisher, and others to quantify uncertainty using ordinary probability, our notion of validity is incompatible with this.  Therefore, the IM's output must be an <i>imprecise probability</i> and, in particular, random sets play an important role in our developments.  
+</blockquote>
+-->
+
+
+<h3>Purpose of this site</h3>
+
+<blockquote>
+<p> <font color="blue">There have been lots of advances recently but, unfortunately, I haven't been keeping this page up to date...</font> </p>
+<p> To supplement the book, I'm posting some relevant materials here, including things done after the book was completed.  Beyond just a supplement, there are still many questions to be answered.  In particular, while I am mostly satisfied with the answers we gave in the book to the questions <i>what is validity?</i> and <i>how to construct a valid IM?</i>, I am unsatisfied with the answers we gave to questions like <i>why validity?</i>  When these ideas were being developed, it was clear to me, for example, why the validity property is important and worth giving up the comfort of additive probability for.  In discussing these ideas with others, however, I found that it was not so clear to them.  So, in recent years, I have mostly focused on this question of <i>why?</i>, and here I want to collect those developments to help complete the IM story. </p>
+
+<p>This site is intended to be a work-in-progress.  I'll post new developments here as they come available and make updates or revisions when I think there are better ways to do or explain things.  When possible, I'll also mention some relevant unanswered questions or open problems. </p>
+</blockquote>
+
+
+
+<h3>News</h3>
+
+<ul type="circle">
+
+<li> <p> <i>06/08/2021:</i> <a href="https://www.sipta.org/blog/book-inferential-models/" target="_blank">My blog post</a> about our inferential models book appeared on the <a href="https://www.sipta.org/" target="_blank">SIPTA</a> website today. </p> </li>
+
+<li> <p> <i>02/04/2021:</i> I'm organizing a virtual workshop on <i>Bayes, Fiducial, and Frequentist (BFF) Inference</i>, taking place on Friday, February 5th, 2021.  For more information, please go to <a href="https://researchers.one/conferences/bff65" target="_blank">https://researchers.one/conferences/bff65</a>. Slides for my talk on imprecise probability and frequentist inference are <a href="martin_bff65.pdf">here</a>. </p> </li>
+
+<li> <p> <i>01/26/2021:</i> I will be giving a (virtual) short course on the IM developments at the <i>Society of Imprecise Probability Theory and Applications</i> (SIPTA) online school being organized by the <a href="https://riskinstitute.uk/" target="_blank">Institute for Risk and Uncertainty</a> at the University of Liverpool, UK.  The conference website is <a href="https://riskinstitute.uk/events/sipta-school-2020/" target="_blank">here</a> and my talks are scheduled for January 27th and 28th, 2021. Slides for my lectures are <a href="martin_ipschool.pdf">here</a>. </p> </li>
+
+<li> <p> <i>11/17/2020:</i> Robin Gong and Xiao-Li Meng's <a href="https://arxiv.org/abs/1712.08946" target="_blank">Judicious judgment meets unsettling updating: Dilation, sure loss, and Simpson's paradox</a> is scheduled to appear as a discussion paper in <i>Statistical Science</i>.  Chuanhai Liu and I were invited as discussants and our comments are <a href="" target="_blank">here</a>.  We make use of the recently-developed connections between validity and coherence (see below) to show how the IM framework can help to settle some of the unsettling phenomena Gong and Meng identified. </p> </li>
+
+<li> <p> <i>11/17/2020:</i> An updated version of my paper (with Leo Cella) on validity, conformal prediction, and IMs is available <a href="https://researchers.one/articles/20.01.00010" target="_blank">here</a>.  We make some interesting connections between <i>validity</i>, which is a frequentist performance-based criterion, and <i>coherence</i>, which is a purely subjective notion, critical to the imprecise probability developments of Walley and others.  To my knowledge, these are the first such connections between validity and coherence, but there's still much more to do. </p> </li>
+
+</ul>
+
+
+<h3>Recent developments</h3>
+
+<blockquote>
+
+<p> <b>False Confidence Theorem.</b> It is know that Fisher's fiducial distributions only assign meaningful probabilities to certain assertions about the unknowns.  The same is true for other data-dependent distributions, including generalized fiducial distributions, confidence distributions, and default-prior Bayesian posterior distributions.  However, I'm not aware of any explanation of what's causing the problem.  The recently established <i>false confidence theorem</i> states that, for any data-dependent probability distribution, there always exists assertions which are false (i.e., don't contain the true value of the unknown) that tend to be assigned high probability.  Since high probability being assigned to a false assertion can lead to erroneous inference, this false confidence phenomenon is problematic.  Interestingly, the problem is not a result of poor choices of prior, etc.&#8212;the culprit is <i>additivity</i>.  Therefore, to avoid false confidence, uncertainty must be quantified using imprecise probability, e.g., through a valid IM.  
+<ul type="circle">
+<li> R. Martin (2019). <a href="https://www.sciencedirect.com/science/article/abs/pii/
+S0888613X19300696?via%3Dihub" target="_blank">False confidence, non-additive beliefs, and valid statistical inference</a>.
+<i>International Journal of Approximate Reasoning</i>. <!--, volume 113, pages 39&#8211;73--> <a
+href="http://arxiv.org/abs/1607.05051" target="_blank">[arXiv]</a> <a href="https://www.researchers.one/article/2019-02-1"
+target="_blank">[researchers.one]</a> </li>
+<li> M. S. Balch, R. Martin, and S. Ferson (2019).  <a
+href="https://royalsocietypublishing.org/doi/10.1098/rspa.2018.0565" target="_blank">Satellite conjunction analysis and the false
+confidence theorem</a>. <i>Proceedings of the Royal Society, Series A</i>. <!--, volume 475, paper 20180565.--> <a
+href="http://arxiv.org/abs/1706.08565" target="_blank">[arXiv]</a> 
+<ul type="disc"> 
+<li> C. Cunen, N. Hjort, and T. Schweder (2020). <a
+href="https://royalsocietypublishing.org/doi/10.1098/rspa.2019.0781" target="_blank">Comment: Confidence in confidence
+distributions!</a> </li>
+<li> R. Martin, M. Balch, and S. Ferson (202x). Response to the comment. <a
+href="https://www.researchers.one/article/2020-08-28" target="_blank">[researchers.one]</a></li> 
+</ul> 
+</li>
+</ul>
+</p>
+
+<p> <b>Alternative notions of validity.</b> In the context of prediction, since there are no (non-trivial) assertion about a "next observation" that are necessarily true/false, a modified definition of validity is required.  In Cella and M. below, we develop a new notion of validity that is both intuitive and appropriate for the prediction setting.  Moreover, it can be applied to inference problems as well, generalizing the original notion of validity, showing when (generalized) Bayes can be valid, and making connections to other concepts such as <i>coherence</i> as in de Finetti and Walley.  I think this is a promising new direction to pursue. 
+<ul type="circle">
+<li> C. Liu and R. Martin (2020).  Comment on Gong and Meng's "Judicious judgment meets unsettling updating: Dilation, sure loss, and Simpson's paradox." <a href="unsettling.pdf">[pdf] </a></li> 
+<li> L. Cella and R. Martin (2020). <!--Valid distribution-free inferential models for prediction.-->Strong validity, consonance, and conformal prediction. <a
+href="https://www.researchers.one/article/2020-01-12" target="_blank">[researchers.one]</a> <a
+href="https://arxiv.org/abs/2001.09225" target="_blank">[arXiv]</a> </li>
+</ul></p>
+
+<p> <b>Connections to imprecise probability.</b> When the IM developments were being made, with the exception of Dempster's and Shafer's work, I was mostly unaware of what had been done in the imprecise probability community.  I've recently made this connection and I think there are some promising developments on the horizon.  For example, the properties of so-called <i>possibility measures</i> seem especially suited to statistical inference tasks, and the paper below highlights the connection between IMs and possibility measures.  More developments in this direction are expected. 
+<ul type="circle">
+<li> C. Liu and R. Martin (2020). Inferential models and possibility measures. <a href="https://www.researchers.one/article/2020-08-29"
+target="_blank">[researchers.one]</a> <a href="https://arxiv.org/abs/2008.06874" target="_blank">[arXiv]</a></li>
+<li> R. Martin (2019). <a href="https://www.sciencedirect.com/science/article/abs/pii/
+S0888613X19300696?via%3Dihub" target="_blank">False confidence, non-additive beliefs, and valid statistical inference</a>.
+<i>International Journal of Approximate Reasoning</i>. <!--, volume 113, pages 39&#8211;73--> <a
+href="http://arxiv.org/abs/1607.05051" target="_blank">[arXiv]</a> <a href="https://www.researchers.one/article/2019-02-1"
+target="_blank">[researchers.one]</a> </li>
+</ul>
+</p>
+
+<p> <b>Handling partial prior information.</b> An apparent advantage to the Bayesian formulation is that it can incorporate available prior information into the analysis in a relatively straightforward way.  To take advantage of this, one needs a precise prior probability distribution for every unknown, but that's just not possible in every application.  Simply plugging in a default prior in place of a real one is not the answer, since an "incorrectly specified" prior can lead to invalid inference.  What's needed is a framework that can incorporate real prior information about the quantities for which it's available, and leave priors unspecified everywhere else.  Imprecise probability theory is specifically designed for such cases, so I expect this to be an advantage for IMs.  Some relevant references are below:
+<ul type="circle">
+<li> L. Cella and R. Martin (2019). <a href="http://proceedings.mlr.press/v103/cella19a.html"
+target="_blank">Incorporating expert opinion in an inferential model while retaining validity</a>.  <i>Proceedings of the 11th International Symposium on Imprecise Probabilities: Theories and Applications</i>. <!--, volume 103, pages
+68&#8211;77.--> </li> 
+<li> R. Martin (2019). <a href="http://proceedings.mlr.press/v103/martin19b.html" target="_blank">On valid
+uncertainty quantification about a model</a>. <i>Proceedings of the 11th International Symposium on Imprecise Probabilities: Theories and Applications</i>. <!--, volume 103, pages 295&#8211;303.--> <a
+href="https://www.researchers.one/article/2018-08-21" target="_blank">[researchers.one]</a> </li>
+<li> Y. Qiu, L. Zhang, C. Liu (2018).  <a href="https://projecteuclid.org/euclid.ejs/1545382952" target="_blank">Exact and efficient inference for partial Bayes problems</a>. <i>Electronic Journal of Statistics</i>. </li> 
+<li> R. Martin, H. Xu, Z. Zhang, and C. Liu (2016). Valid uncertainty quantification about the model in linear regression. <a
+href="http://arxiv.org/abs/1412.5139" target="_blank">[arXiv]</a> </li>
+</ul>
+</p>
+
+</blockquote>
+
+
+
+<!--
+<h3>Previous developments</h3>
+
+<blockquote>
+
+<p> <i>Under construction...</i> </p>
+
+generalized IMs
+model uncertainty
+prediction
+
+<p> <i>Dimension reduction for efficiency purposes.</i> </p> 
+
+<p> <i>Efficiency and the choice of random set.</i> The general formulation described below provides very mild sufficient conditions on the random set that ensure validity.  On the one hand, mild sufficient conditions is desirable because it means the theory is flexible and the conditions are easy to meet.  On the other hand, this implies that lots of different random sets lead to the same validity property, which begs the question: <i>what random set is best?</i>  Of course, to answer this question, we need some way of ranking random sets.  <b>More...</b> </p>
+
+<p> <i>Original IM formulation.</i> <b>To do....</b> </p>
+
+</blockquote>
+-->
+
+
+
+<br>
+<br>
+<br>
+
+</div>
+   
+</body>
+
+
+</html> 
+
+
+
+
+
+
+

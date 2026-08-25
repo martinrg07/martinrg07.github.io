@@ -1,0 +1,286 @@
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html
+xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">-->
+
+
+
+<!DOCTYPE html> <html> <head> <!--<meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">-->
+
+<title>Ryan Martin : Working Papers</title>
+
+<style type-"text/css">
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background-color:#CFB991;
+  /*background-color:#ffffff;*/
+  color:#000000;
+}
+
+div{background-color:#ffffff;}
+/*a:link{color:#CFB991;}*/
+a:link{color:#555960;}
+/*a:visited{color:#CFB991;}*/
+a:visited{color:#555960;}
+a:link{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+
+/*body{margin-left: 10%; margin-right: 10%; font-size: 15px;}*/
+
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  /*padding: 10px;*/
+  /*width: 240px;*/
+  width: 20%;
+  background-color:#000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color:#CFB991;
+  font-size: 18px; 
+  
+  /* 
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+ */
+  
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #CFB991;
+  padding: 0.4em;
+  text-decoration:bold;
+  /*font-size:16px;*/
+  font-size: 16px; 
+}
+
+/* Active/current link */
+.sidebar a.active {
+  /*background-color: #000000;*/
+  /*color:#CFB991;*/
+  background-color: #CFB991;
+  color: #000000;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  color: #CFB991;
+  text-decoration: underline;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+
+  margin-left: 22%;
+  /*padding: 50px;*/
+  /*height: 100%;*/
+  /*font-size:15px;*/
+  /*font-size:1em; */
+  /*padding-top: 25px;*/
+  /*padding-right: 80px;*/
+  /*padding-bottom: 30px;*/
+  /*padding-left: 80px;*/
+  
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  
+  background-color:#CFB991;
+  /*background-color:#ffffff;*/
+  color:#000000;
+}
+
+
+/* 
+@media screen and (max-width: 700px) { .sidebar { width: 100%; height: auto; position: relative; } .sidebar a {float: left;}  .sidebar a { text-align:
+center; float: none; } div.content {margin-left: 0;} }
+
+@media screen and (max-width: 400px) { .sidebar a { text-align: center; float: none; } } */
+
+
+/* Two image containers (use 25% for four, and 33% for three, etc) */
+.column1 { float: left; width: 25%;
+
+  padding-top: 20px; padding-right: 35px;
+  /*padding-bottom: 30px;*/ *padding-left: 80px;*/
+
+  /*padding: 30px;*/
+}
+
+.column2 { float: left; width: 65%;
+
+  /*padding-top: -5px;*/ *padding-left: 10px;*/ *padding-bottom: 30px;*/ *padding-left: 80px;*/
+
+  /*padding: 30px;*/
+}
+
+/* Clear floats after image containers */
+.row::after { content: ""; clear: both; display: table; }
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) { .column { width: 100%; } .column1 { width:100%; padding-left: 10%; } .column2 { width:100%; padding-left: 10%}
+}
+
+</style> </head>
+
+
+
+<!-- NCSU color schemes: BLACK = #000000 RED = #CC0000 -->
+
+
+
+
+
+<body>
+
+
+<div class="sidebar"> 
+<center>
+<a href="http://www.purdue.edu/" target="_blank"><img src="Images/PU-H-Full-Rev-RGB.png" width="78%"></a>
+<br>
+<img src="Images/mypic.jpg" width="75%" alt="[Ryan Martin]">
+<dl>
+<dt><b>Ryan Martin</b></dt>
+<dt><i>Professor</i></dt>
+</dl>
+</center>
+<a
+href="index.html">Home</a> 
+<a href="teaching.html">Teaching</a> 
+<a class="active" href="working.html">Working Papers</a> 
+<a
+href="published.html">Published Papers</a> 
+<a href="imbook.html">Inferential Models Book</a> 
+<a href="talks.html">Presentations</a> 
+<a
+href="software.html">Software</a> 
+<a href="RyanMartin-CV.pdf">CV</a> 
+<a href="https://researchers.one/users/Ryan-Martin/qjmGjw5r"
+target="_blank">Researchers.One &nbsp;<img src="Images/r1_small_crop.png" height="17px" valign="bottom"></a> 
+</div>
+
+
+
+
+
+<div class="content">
+
+<h3>Working papers, etc.</h3>
+
+<blockquote> 
+
+<p> 
+<b><i>Inferential Models.</i></b> My primary research focus is on foundations of statistics and probability, in particular, developing a framework of valid and efficient probabilistic inference that is stronger than the Bayesian framework in various ways. One key advantage over the Bayesian solution is that this framework's probability-like output is provably <i>valid</i> in the following sense: the method assigning high "probability" to false hypotheses is a provably rare event.  This is (intentionally) similar to frequentist-style error rate control, but stronger in certain respects.  It turns out that achieving this validity property requires considerations beyond ordinary probability, and our <a href="imbook.html">inferential model</a> framework relies heavily on random sets; more recently, I've been focusing on possibility measures and other kinds of more general imprecise probabilities.  My current efforts aim to extend these developments to modern problems that involve structured-but-high-dimensional unknowns. The key to these developments is the use of <i>partial prior information</i> that drives the regularization needed to achieve efficiency in high-dimensions. 
+
+<!-- <p> &#8212;Fiducial inference viewed through a possibility-theoretic inferential model lens. <a href="https://researchers.one/articles/23.03.00002" target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2303.08630" target="_blank">[arXiv]</a> </p> -->
+
+<!--
+<p> &#8212; Variational approximations of possibilistic inferential models (with L. Cella). <a href="https://researchers.one/articles/24.04.00005" target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2404.19224" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Which statistical hypotheses are afflicted with false confidence? <a href="https://researchers.one/articles/24.04.00004" target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2404.16228" target="_blank">[arXiv]</a> </p>
+-->
+
+<!--<p> &#8212;Regularized e-processes: anytime valid inference with knowledge-based efficiency gains. <a href="http://arxiv.org/abs/2410.01427" target="_blank">[arXiv]</a> <a href="https://researchers.one/articles/24.09.00003" target="_blank">[researchers.one]</a> </p>-->
+
+<p> &#8212;Induction and the rule of succession through a possibilistic inferential model lens (with S.-N. Prim and J. Williams). <a href="https://arxiv.org/abs/2608.11935" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Valid and efficient possibilistic structure learning in Gaussian linear regression (with N. Singer and J. Williams). <a href="http://arxiv.org/abs/2511.09305" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Divide-and-conquer with finite sample sizes: valid and efficient possibilistic inference (with L. Cella and E. Hector). <a href="http://arxiv.org/abs/2503.22812" target="_blank">[arXiv]</a> </p> 
+
+<p> &#8212;Fisher's underworld and the behavioral--statistical reliability balance in scientific inference. <a href="https://researchers.one/articles/23.12.00001" target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2312.14912" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Valid and efficient imprecise-probabilistic inference with partial priors, III. Marginalization. <a href="https://researchers.one/articles/23.09.00007" target="_blank">[researchers.one]</a> <a href="https://arxiv.org/abs/2309.13454" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Valid and efficient imprecise-probabilistic inference with partial priors, II. General framework. <a href="https://researchers.one/articles/22.11.00006" target="_blank">[researchers.one]</a> <a href="https://arxiv.org/abs/2211.14567" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Valid and efficient imprecise-probabilistic inference with partial priors, I. First results. <a
+href="https://researchers.one/articles/21.05.00001" target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2203.06703"
+target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;An imprecise-probabilistic characterization of frequentist statistical inference. <a href="https://researchers.one/articles/21.01.00002"
+target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2112.10904" target="_blank">[arXiv]</a> </p> <!--A mathematical characterization
+of confidence as valid beliefs. <a href="http://arxiv.org/abs/1707.00486" target="_blank">[arXiv]</a> </p>-->
+
+</p>
+
+
+<br>
+
+
+
+<p> 
+<b><i>Anytime-valid inference, e-values, etc.</i></b> A major challenge to classical statistics is the mathematical fact that error rate control properties break down when, e.g., the sample size is determined in "real time" as opposed to being predetermined and fixed.  As an example, researchers might reach their planned/budgeted sample size, note that they're close to a significant result, and then decide to collect more data in hopes of reaching the significance threshold. While these strategies are practically very natural, it's a serious issue if following these procedures ruins the reliability of the statistical methods employed. <i>Anytime-valid inference</i> is about, among other things, the design of methods that are provably reliable even under dynamic data collection schemes.  The workhorses behind these methods are called <i>e-values</i> or <i>e-processes</i>, which have connections to classical ideas dating back at least to Wald and Robbins.  
+
+<p> &#8212;Universal inference for model selection on networks (with J. Williams and E. Yanchenko) <a href="http://arxiv.org/abs/2606.30981" target="_blank">[arXiv]</a> </p>
+
+
+</p>
+
+
+<br>
+
+
+
+
+<p> 
+<b><i>Generalized Bayesian inference & prediction.</i></b> Generalized Bayes can mean various things, and here I mean the construction of a "posterior distribution" when the quantity of interest is not directly defined as the parameter of a statistical model.  One situation where this would be appropriate is when the quantity of interest is defined as a minimizer of an expected loss, as is common in machine learning applications.  For such cases, a <i>Gibbs posterior</i> is a data-dependent probability distribution constructed directly from that loss&#8212;no likelihood required; see <a href="https://arxiv.org/abs/2203.09381" target="_blank">M. & Syring's review chapter</a>. Since one can't count on having a likelihood (due to computational intractability or simply not being willing to specify one and risk model misspecification biases), if there's a more direct way to carry out a Bayesian(-like) posterior construction, then the risk of model misspecification biases can be reduced/eliminated without the need for overly-complex nonparametric models. But there's no free lunch: by mis- or under-specifying the model, the calibration enjoyed by well-specified Bayesian posteriors (e.g., via the Bernstein&#8211;von Mises theorem) no longer holds, so the calibration needs to be handled manually; for this, I personally like the <i>generalized posterior calibration</i> algorithm in <a href="http://arxiv.org/abs/1509.00922" target="_blank">Syring & M. <i>Biometrika</i> 2019</a>. 
+
+<p> &#8212;Generalized Bayes inference on a linear personalized MCID (with P.-S. Wu). <a href="https://researchers.one/articles/22.08.00008"
+target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2208.12565" target="_blank">[arXiv]</a> </p>
+
+<P> &#8212;Gibbs posterior inference on a Levy density under discrete sampling (with Z. Wang). <a href="https://researchers.one/articles/21.09.00013"
+target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2109.06567" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Calibrating generalized predictive distributions (with P.-S. Wu). <a href="https://researchers.one/articles/21.07.00001"
+target="_blank">[researchers.one]</a> <a href="http://arxiv.org/abs/2107.01688" target="_blank">[arXiv]</a> </p>
+
+</p>
+
+
+<br>
+
+
+<p> 
+<b><i>Miscellaneous.</i></b> I have ongoing work on, e.g., empirical Bayes inference in high-dimensional problems, conformal prediction, and nonparametric estimation of mixing distributions, data fusion, among other things.  
+
+<p> &#8212; Variational empirical Bayes variable selection in high-dimensional logistic regression (with Y. Tang). <a href="http://arxiv.org/abs/2502.10532" target="_blank">[arXiv]</a> </p>
+
+<p> &#8212;Permutation-based uncertainty quantification about a mixing distribution (with V. Dixit). <a href="http://arxiv.org/abs/1906.05349"
+target="_blank">[arXiv]</a> </p>
+
+</p>
+
+</blockquote>
+
+<br>
+
+<br>
+
+</div>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
